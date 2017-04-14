@@ -8,17 +8,17 @@ exports.seed = function(knex, Promise) {
         {
           votes: 35,
           url: 'http://www.google.com',
-          title:'dope shit'
+          title:'google'
         },
         {
           votes: 14,
           url: 'http://www.sickspeed.com',
-          title:'doper shit'
+          title:'car parts'
         },
         {
           votes: 70,
           url: 'http://www.stance.com',
-          title:'dopest shit'
+          title:'car pictures'
         }
       ]);
     });

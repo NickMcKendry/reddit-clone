@@ -6,7 +6,7 @@ const bodyParser = require('body-parser')
 
 const app = express()
 
-const port = 4002
+const port = 4003
 
 app.set('view engine', 'hbs')
 
@@ -26,6 +26,13 @@ app.get('/', (req, res) => {
 
 app.post('/add-link', (req, res) => {
   linkQeury.add(req.body)
+  .then(()=> {
+    res.redirect('/')
+  })
+})
+
+app.post('/upvote/:id', (req, res) => {
+  linkQeury.vote(req.params.id)
   .then(()=> {
     res.redirect('/')
   })

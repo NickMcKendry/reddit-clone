@@ -21,14 +21,21 @@
       </form>
     </section>
     <main>
-      {{#each data}}
+      <!-- {{#each data}} -->
         <div class="link">
-        <a href="/upvote/{{this.id}}">U</a>
-        <span class="votes">{{this.votes}}</span>
-        <a href="/downvote/{{this.id}}">D</a>
-        <span class="title"><a href="{{this.url}}">{{this.title}}</a></span>
-      </div>
-      {{/each}}
+        <form class="" action="/upvote/{{id}}" method="post">
+          <button>U</button>
+        </form>
+        <span class="votes">{{votes}}</span>
+        <form class="" action="/downvote/{{id}}" method="post">
+          <a href="/downvote/{{id}}">D</a>
+        </form>
+        <span class="title"><a href="{{url}}">{{title}}</a></span>
+        </div>
+
+      <!-- {{/each}} -->
+
+
     </main>
   </body>
 </html>
