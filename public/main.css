@@ -1,3 +1,82 @@
-body {
-  background-color: webkit-linear-gradient(#111, #222)
+body{
+  background-color: #b71c1c;
 }
+
+.header {
+  background-color: #7f0000;
+  height: 100%;
+  border-bottom: none;
+  margin-left: 1%;
+  margin-right: 1%;
+  text-align: center;
+  color: white;
+
+}
+
+a {
+    background-color: transparent;
+    position: relative;
+    left: 55px;
+    bottom: 46px;
+    font-size: x-large;
+}
+
+
+  span.votes {
+      position: relative;
+      left: 8px;
+      font-family: 'Arapey', serif;
+      font-size: x-large;
+      bottom: 10px;
+  }
+
+input {
+  width: 100%;
+}
+
+
+
+.up:hover {
+    color: #333;
+    background-color: rgba(7, 228, 95, 0.69);
+    border-color: rgba(7, 228, 95, 0.69);
+  }
+
+.down:hover {
+    color: #333;
+    background-color: rgba(169, 21, 21, 0.69);
+    border-color: rgba(169, 21, 21, 0.69);
+  }
+
+.down {
+  position: absolute;
+}
+ .up {
+   position: relative;
+   bottom: 15px;
+ }
+
+ .votes {
+   font-family: 'Arapey', serif;
+ }
+
+ h1 {
+   margin-top: 0px;
+ }
+
+ main {
+   margin: 6%;
+   margin-top: 1%;
+   margin-bottom: 3%;
+ }
+
+ .submit-link {
+   margin: 6%;
+   margin-top: 1%;
+   margin-bottom: 1%;
+   background-color: #616161;
+ }
+
+ .well {
+   border: none;
+ }

@@ -38,6 +38,13 @@ app.post('/upvote/:id', (req, res) => {
   })
 })
 
+app.post('/downvote/:id', (req, res) => {
+  linkQeury.downVote(req.params.id)
+  .then(()=> {
+    res.redirect('/')
+  })
+})
+
 app.listen(port, () => {
   console.log(`listening on ${port}`);
 })

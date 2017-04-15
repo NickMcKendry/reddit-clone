@@ -1,7 +1,7 @@
 const pg = require('./knex')
 
 function getAll() {
-  return pg('link').select().orderBy('votes')
+  return pg('link').select().orderBy('votes', 'desc')
 }
 
 function add(obj) {
@@ -12,9 +12,14 @@ function vote (id) {
   return pg('link').where('id', '=', id).increment('votes', 1)
 }
 
+function downVote (id) {
+  return pg('link').where('id', '=', id).decrement('votes', 1)
+}
+
 
 module.exports = {
   getAll,
   add,
-  vote
+  vote,
+  downVote
 }
