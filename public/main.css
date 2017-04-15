@@ -17,8 +17,12 @@ a {
     background-color: transparent;
     position: relative;
     left: 55px;
-    bottom: 46px;
-    font-size: x-large;
+    bottom: 44px;
+    /*font-size: x-large;*/
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1.4em;
+    color: maroon;
 }
 
 
@@ -79,4 +83,13 @@ input {
 
  .well {
    border: none;
+ }
+
+ .sm {
+   margin-top: 1%;
+   background-color: rgba(169, 21, 21, 0.69);
+ }
+
+ .sm:hover {
+   background-color: rgba(7, 228, 95, 0.69); 
  }
