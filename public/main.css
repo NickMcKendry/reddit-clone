@@ -19,7 +19,7 @@ a {
     left: 55px;
     bottom: 44px;
     /*font-size: x-large;*/
-    text-decoration: underline;
+    /*text-decoration: underline;*/
     font-weight: bold;
     font-size: 1.4em;
     color: maroon;
@@ -91,5 +91,5 @@ input {
  }
 
  .sm:hover {
-   background-color: rgba(7, 228, 95, 0.69); 
+   background-color: rgba(7, 228, 95, 0.69);
  }
