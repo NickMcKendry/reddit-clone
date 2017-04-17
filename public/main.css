@@ -1,3 +1,7 @@
+* {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
 body{
   background-color: #b71c1c;
 }
@@ -10,6 +14,7 @@ body{
   margin-right: 1%;
   text-align: center;
   color: white;
+  margin-top: 2%;
 
 }
 
@@ -17,21 +22,23 @@ a {
     background-color: transparent;
     position: relative;
     left: 55px;
-    bottom: 44px;
+    bottom: 39px;
     /*font-size: x-large;*/
     /*text-decoration: underline;*/
     font-weight: bold;
     font-size: 1.4em;
     color: maroon;
+    font-family: 'Josefin Sans', sans-serif;
+
 }
 
 
   span.votes {
       position: relative;
       left: 8px;
-      font-family: 'Arapey', serif;
+      font-family:  'Arapey', serif;
       font-size: x-large;
-      bottom: 10px;
+      bottom: 7px;
   }
 
 input {
@@ -57,7 +64,7 @@ input {
 }
  .up {
    position: relative;
-   bottom: 15px;
+   bottom: 10px;
  }
 
  .votes {
@@ -77,19 +84,41 @@ input {
  .submit-link {
    margin: 6%;
    margin-top: 1%;
-   margin-bottom: 1%;
+   margin-bottom: 2%;
    background-color: #616161;
+   border-radius: 100px 15px;
  }
 
  .well {
    border: none;
+
  }
 
  .sm {
    margin-top: 1%;
-   background-color: rgba(169, 21, 21, 0.69);
+   background-color: rgb(183, 28, 28);
+       border-radius: 20% 0%;
+       color: lemonchiffon;
+       margin-top: 10px;
  }
 
  .sm:hover {
    background-color: rgba(7, 228, 95, 0.69);
  }
+
+h2 {
+  color: goldenrod;
+}
+
+label {
+  color: lemonchiffon;
+  margin-top: 5px;
+}
+
+img {
+  height: 150px;
+}
+
+.link {
+  border-radius: 30px 5px;
+}
