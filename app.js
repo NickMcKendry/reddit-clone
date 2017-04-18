@@ -6,7 +6,7 @@ const bodyParser = require('body-parser')
 
 const app = express()
 
-const port = process.env.PORT || 3011
+const port = process.env.PORT || 3022
 
 app.set('view engine', 'hbs')
 
@@ -55,9 +55,13 @@ app.get('/comments/:id', (req, res) => {
 })
 
 app.post('/add-comment/:id', (req, res) => {
-  linkQeury.addComment(req.params.id)
-  .then(() => {
-    res.redirect('/comments')
+  console.log(req.params.id);
+  req.body.link_id = req.params.id
+  var comId = req.params.id
+  linkQeury.addComment(req.body)
+  .then( data => {
+    res.redirect('/comments/' + comId)
+    console.log(comId);
   })
 })
 
