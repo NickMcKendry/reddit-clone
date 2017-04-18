@@ -8,17 +8,20 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           comment_text: 'dope shit',
-          link_id: 1
+          link_id: 1,
+          username: 'fuckboy123'
         },
         {
           id: 2,
           comment_text: 'dope shit',
-          link_id: 1
+          link_id: 1,
+          username: 'fuckboy123'
         },
         {
           id: 3,
           comment_text: 'dope shit',
-          link_id: 2
+          link_id: 2,
+          username: 'fuckboy123'
         }
       ]);
     });

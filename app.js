@@ -6,7 +6,7 @@ const bodyParser = require('body-parser')
 
 const app = express()
 
-const port = process.env.PORT || 3001
+const port = process.env.PORT || 3011
 
 app.set('view engine', 'hbs')
 
@@ -23,6 +23,7 @@ app.get('/', (req, res) => {
   })
 
 })
+
 
 app.post('/add-link', (req, res) => {
   linkQeury.add(req.body)
@@ -44,6 +45,22 @@ app.post('/downvote/:id', (req, res) => {
     res.redirect('/')
   })
 })
+
+app.get('/comments/:id', (req, res) => {
+  linkQeury.getPage(req.params.id)
+  .then(data => {
+    res.render('comments', {data})
+  })
+
+})
+
+app.post('/add-comment/:id', (req, res) => {
+  linkQeury.addComment(req.params.id)
+  .then(() => {
+    res.redirect('/comments')
+  })
+})
+
 
 app.listen(port, () => {
   console.log(`listening on ${port}`);
